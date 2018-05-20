@@ -1,0 +1,852 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Project Name
+Version:    1.0
+Last change:    24/03/17 [fixed Float bug, vf]
+Author Name: Author Name
+Primary use:    Project Type
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Body
+2.
+-------------------------------------------------------------------*/
+/*
+==========================================
+    Google Fonts
+==========================================
+*/
+/* font-family: 'Raleway', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700');
+
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+html,
+body{
+	height: 100%;
+}
+.section_padding {
+    padding:  80px 0;
+}
+.section_headet h2 {
+    font-size:  30px;
+    text-transform:  uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:  600;
+    position: relative;
+}
+.section_headet h2 span {
+    color:  #ff0000;
+}
+.section_headet h2:after {
+	content:  '';
+	position:  absolute;
+	height:  1px;
+	width:  156px;
+	background:  #ff0000;
+	top: 100%;
+	left:  50%;
+	margin-left: -78px;
+	margin-top:  8px;
+}
+
+.section_headet h2:before {
+    content:  '';
+    position:  absolute;
+    width: 16px;
+    height: 16px;
+    background: #ff0000;
+    border-radius:  50%;
+    top: 100%;
+    left:  50%;
+    margin-left:  -8px;
+}
+.content_top_space{
+	margin-top: 75px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+/*
+==========================================
+    Header Css Or Logo Css
+==========================================
+*/
+
+.logo img {
+    margin-top: 15px;
+}
+
+.header-main {
+    position:  absolute;
+    width: 100%;
+    z-index: 99;
+}
+
+.header-main:after {
+    position:  absolute;
+    width:  100%;
+    height:  100%;
+    left:  0;
+    top:  0;
+    content:  '';
+    background:  #393838;
+    opacity:  .49;
+    z-index:  -1;
+}
+
+nav.main-menu {
+    
+}
+
+nav.main-menu ul {
+	float:  right;
+}
+
+nav.main-menu ul li {
+    float:  left;
+    margin-left:  26px;
+}
+
+nav.main-menu ul li a {
+    color:  #fff;
+    text-transform:  uppercase;
+    padding: 38px 0;
+    font-family:  'Raleway', sans-serif;
+    font-weight:  500;
+    display:  inline-block;
+    text-decoration:  none;
+    transition: .3s;  
+}
+
+nav.main-menu ul li a:hover{
+    color: #fe320e;
+}
+/*
+==========================================
+    Header Image Css
+==========================================
+*/
+
+.header_img{
+	background: url(../img/header-img.jpg);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 0;
+	background-attachment: fixed;
+}
+.header_img:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #252525;
+	opacity: .42;
+	z-index: -1;
+
+}
+.header_img .container,
+.header_img .row,
+.header_img .col-md-12{
+	height: 100%;
+}
+.display_table{
+	display: table;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+.display_table_cell{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+}
+.header_content {
+    color:  #fff;
+    margin-top: 95px;
+}
+
+.header_content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size:  60px;
+    font-weight:  500;
+}
+
+.header_content h1 span {color:  #fe320a;font-weight:  700;}
+
+.header_content p {
+    width:  850px;
+    margin: 55px auto 60px auto;
+    transition:  .3s;
+    font-family:  'Raleway', sans-serif;
+    font-weight:  400;
+    line-height:  24px;
+}
+
+.header_content a {
+    text-decoration:  none;
+    color:  #fff;
+    background: #fe320a;
+    font-family:  'Raleway', sans-serif;
+    padding: 8px 32px;
+    font-size:  20px;
+    display:  inline-block;
+}
+
+.header_content a:hover {
+    background:  #fff;
+    color:  #fe320a;
+}
+/*
+==========================================
+    About Us Section Css
+========================================== 
+*/
+section.about {
+    background:  #f6f6f6;
+}
+
+.about_left {
+    position:  relative;
+    text-align:  center;
+    color:  #fff;
+}
+
+.about_left img {
+    width:  100%;
+    height:  auto;
+}
+
+.about_left .about_left_details {
+    position:  absolute;
+    bottom:  0;
+    width:  100%;
+    z-index: 1;
+}
+
+.about_left .about_left_details:after {
+    content:  '';
+    position:  absolute;
+    top:  0;
+    left:  0;
+    width:  100%;
+    height:  100%;
+    opacity:  .70;
+    background: #252525;
+    z-index:  -1;
+}
+.about_left_details {
+    padding: 10px;
+}
+.about_left_details h4 {
+    text-transform:  uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight:  600;
+    font-size:  26px;
+}
+
+.about_left_details ul li {
+    display:  inline;
+}
+
+.about_left_details ul li a {
+    display:  inline-block;
+    font-size:  18px;
+    color:  #fff;
+    background:  #252525;
+    width:  35px;
+    height:  35px;
+    margin: 3px;
+    padding: 4px;
+    transition: .3s;
+    border-radius:  50%;
+}
+
+.about_left_details ul li a:hover {
+    background:  #fff;
+    color:  #252525;
+}
+
+.abour_right h3 {
+    font-size:  26px;
+    font-weight:  600;
+    font-family: 'Raleway', sans-serif;
+}
+
+.abour_right p {
+    font-size:  14px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 25px;
+    line-height:  26px;
+    color: #1e1e1e;
+}
+
+.abour_right p strong {
+    color:  #545454;
+}
+
+.abour_right a {
+    text-decoration:  none;
+    color:  #fff;
+    font-size:  20px;
+    font-weight:  600;
+    border:  1px solid #ff0000;
+    background: #ff0000;
+    padding: 10px 22px;
+    display:  inline-block;
+    margin-top:  30px;
+    transition:  .3s;
+}
+
+.abour_right a:hover {
+    background:  #fff;
+    color:  #ff0000;
+    border:   1px solid #ff0000;
+}
+
+/*
+==========================================
+    Video Area Section Css
+========================================== 
+*/
+section.video_area{
+	background: url(../img/vodep-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 0;
+	color: #fff;
+	background-attachment: fixed;
+}
+section.video_area:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: .60;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.video_area .text h2 {
+    font-size:  36px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:  700;
+}
+
+.video_area .video_play_icon a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 36px;
+    color: #fff;
+    width: 95px;
+    height: 95px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    line-height: 86px;
+    margin-top: 40px;
+    transition: .3s;
+}
+
+.video_area .video_play_icon a:hover {
+	background: #fff;
+	color: #000;
+}
+/*
+==========================================
+    Services Section Css
+========================================== 
+*/
+.services-box {
+    margin-top:  75px;
+}
+
+.services-box i {
+    color:  #ff0000;
+    font-size:  48px;
+}
+
+.services-box h4 {
+    font-size:  24px;
+    color:  #151515;
+    margin:  13px 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.services-box p {line-height: 24px;color:  #252525;}
+/*
+==========================================
+    Myskill Section Css
+========================================== 
+*/
+/*Myskill Left*/
+section.skill {
+    background:  #f3f3f3;
+}
+
+.skill_left h3 {
+    font-size:  24px;
+    font-weight:  600;
+    color:  #151515;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.skill_left p {
+    font-weight:  300;
+    margin-top:  20px;
+    line-height:  26px;
+    color:  #9e9e9e;
+    font-family: 'Raleway', sans-serif;
+    font-size:  14px;
+}
+
+.skill_left p:last-child {
+    margin-top:  30px;
+}
+/*Myskill Right*/
+.skill-right h3 {
+    font-size:  24px;
+    font-weight:  400;
+    color:  #1b1b1b;
+    font-family: 'Raleway', sans-serif;
+}
+.skill-right p {
+    font-weight: 300;
+    line-height: 26px;
+    margin-top: 18px;
+    font-family: 'Raleway', sans-serif;
+    color: #2c2b2b;
+    font-size: 14px;
+}
+.nandine_skill-bar p {
+    margin-top: 0;
+}
+
+/*
+==========================================
+    Counter Section Css
+========================================== 
+*/
+.counter{
+	background: url('../img/counter-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	z-index: 0;
+	background-attachment: fixed;
+}
+
+section.counter:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    top: 0;
+    left: 0;
+    opacity: .60;
+    z-index: -1;
+}
+
+.counter_box i {
+    font-size:  22px;
+    border:  2px solid #fff;
+    border-radius:  50%;
+    width:  55px;
+    height:  55px;
+    line-height:  48px;
+    margin-bottom: 6px;
+}
+.counter_box {
+    font-family: 'Raleway', sans-serif;
+    text-align:  center;
+    color:  #fff;
+}
+
+span.counter_numder {
+    font-size:  30px;
+    font-weight:  600;
+}
+
+p.counter_name {
+    font-size:  26px;
+    text-transform:  capitalize;
+    font-weight:  600;
+}
+/*
+==========================================
+    Portfolio Section Css
+========================================== 
+*/
+.portfolio_menu {
+    text-align:  center;
+}
+
+.portfolio_menu button {
+    background: transparent;
+    border: 0;
+    color: #3c3c3c;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    transition: .3s;
+    outline: none;
+}
+
+.portfolio_menu button:hover {
+    color: #ff0000;
+}
+
+.portfolio_item {
+    margin-top: 36px;
+    position: relative;
+    transition: .3s;
+}
+
+button.mixitup-control-active {
+    color: #ff0000;
+}
+
+.portfolio_item img {
+    max-width:  100%;
+}
+/* portfolio_Item_hover */
+
+.portfolio_item_hover {
+    position:  absolute;
+    width:  100%;
+    height:  100%;
+    left:  0;
+    top:  0;
+    display:  flex;
+    align-items:  center;
+    justify-content:  center;
+    color:  #fff;
+    transition:  .3s;
+    z-index:  1;
+    background: #ff000087;
+    visibility: hidden;
+    opacity: 0;
+}
+.portfolio_item:hover .portfolio_item_hover{
+	visibility: visible;
+	opacity: 1;
+
+}
+
+.portfolio_item_hover a {
+    font-size:  24px;
+    cursor: pointer;
+    color: #fff;
+}
+/*
+==========================================
+    Team Member Section Css
+========================================== 
+*/
+
+.team{
+	background: #e1e1e1;
+}
+
+.team-item {
+    position:  relative;
+}
+
+.team-item-hover {
+    position:  absolute;
+    top:  0;
+    left:  0;
+    width:  100%;
+    height:  100%;
+    z-index:  0;
+}
+
+.team-item-hover:after {
+    content:  '';
+    position:  absolute;
+    top:  0;
+    left:  0;
+    background:  red;
+    width:  100%;
+    height:  100%;
+    opacity:  0;
+    z-index:  -1;
+    visibility: hidden;
+    transition: .3s;
+}
+.team-item:hover .team-item-hover:after{
+	visibility: visible;
+	opacity: .44;
+}
+
+.team-hover-content {
+    background:  red;
+    position:  absolute;
+    width:  100%;
+    height:  auto;
+    text-align:  center;
+    bottom:  -70px;
+    color:  #fff;
+    padding:  10px 0;
+    transition: .36s;
+}
+.team-item:hover .team-hover-content{
+	bottom: 0;
+}
+
+h4.team-neme {
+    text-transform: uppercase;
+}
+
+.team-hover-content ul li {
+    display:  inline;
+}
+
+.team-hover-content ul li a {
+    color:  #fff;
+    font-size:  18px;
+    margin:  0 5px;
+}
+
+.team-hover-content ul {
+    margin-top:  4px;
+}
+
+/*
+==========================================
+    Testimonial Section Css
+========================================== 
+*/
+.testimonial {
+    background: url(../img/testimonial-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    color: #f1e1e1;
+    background-attachment: fixed;
+}
+
+.testimonial:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .60;
+    z-index: -1;
+}
+.owl-carousel-testimonial img {
+    width: auto !important;
+    margin:  0 auto;
+    border-radius:  50%;
+}
+.owl-carousel-testimonial .item{
+	text-align: center;
+}
+
+h4.testimonial-name {
+    text-transform:  uppercase;
+    font-size: 18px;
+    margin:  10px 0;
+}
+.testimonial p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+}
+/*
+==========================================
+    Blog Section Css
+========================================== 
+*/
+
+.blog-item {
+    box-shadow: 0 0 15px #e8e2e2;
+}
+
+.blog-item img {
+    max-width:  100%;
+    border-bottom: 8px solid #464646;
+}
+
+article.blog-details {
+    padding:  20px;
+}
+
+h2.blog-title {
+    font-size: 24px;
+    font-weight:  600;
+    color:  #433f3f;
+    font-family: 'Montserrat', sans-serif;
+}
+
+article.blog-details .date {
+    font-size:  14px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+article.blog-details p {
+    line-height:  24px;
+    color:  #433f3f;
+}
+
+a.blog-button {
+    text-decoration:  none;
+    font-size:  14px;
+    background: #252525;
+    color:  #fff;
+    padding: 6px 12px;
+    transition:  .3s;
+    display: inline-block;
+    margin-top:  14px;
+    border: 1px solid #252525;
+}
+
+a.blog-button:hover {
+    background:  transparent;
+    color:  #252525;
+}
+
+/*
+==========================================
+    Contact Us Section Css
+========================================== 
+*/ 
+.contact {
+    background: url(../img/contact-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    color: #fff;
+    background-attachment: fixed;
+}
+.contact:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #000000;
+    opacity: .55;
+    z-index: -1;
+}
+
+.contact input {
+    background:  transparent;
+    border:  1px solid #fff;
+    margin-bottom:  25px;
+    height: 42px;
+    color: #fff;
+}
+
+.contact textarea {
+    background:  transparent;
+    border:  1px solid #fff;
+    margin-bottom:  25px;
+    height: 180px;
+    padding:  20px;
+    color: #fff;
+}
+
+.contact button {
+    background: #ff0000;
+    border:  0;
+    font-size:  20px;
+    padding:  10px 32px;
+    transition:  .3s;
+}
+
+.contact button:hover {
+    background:  #fff;
+    color:  #ff0000;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder{
+	color: #fff;
+}
+/*
+==========================================
+    Footer Section Css
+========================================== 
+*/ 
+
+.footer {
+    background: #121111;
+    color: #fff;
+    padding: 30px 0;
+ }
+
+ .footer-icon ul li {
+    float:  left;
+    margin-right:  15px;
+}
+
+.footer-icon ul li:last-child {
+    margin-right:  0;
+}
+
+.footer-icon ul li a {
+    color:  #fff;
+}
+/*
+==========================================
+    Responsive menu Css (Bootstrap customize)
+========================================== 
+*/ 
+nav.navbar.navbar-expand-lg.navbar-light.main-menu {
+    padding: 0;
+}
+nav.main-menu ul {
+    margin-left: auto;
+}
+.logo img {
+    margin-top: 0;
+}
+button.navbar-toggler {
+    background: #dce3e6a8;
+    border: 2px solid #343a40;
+}
+button.navbar-toggler.collapsed {
+    background: #bbb1b1;
+    border: 2px solid #343a40;
+}
+

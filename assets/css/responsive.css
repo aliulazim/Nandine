@@ -1,0 +1,15 @@
+/*******************************
+	All Responsive Code
+*******************************/
+@media only screen and (max-width: 991px) and (min-width: 280px)  {
+	.main-menu ul.navbar-nav {
+	    background: #000;
+	    width: 100%;
+	    height:  auto;
+	    text-align:  center;
+	    opacity:  .60;
+}
+.main-menu ul.navbar-nav li a {
+   	 padding:  10px 0;
+}
+}
